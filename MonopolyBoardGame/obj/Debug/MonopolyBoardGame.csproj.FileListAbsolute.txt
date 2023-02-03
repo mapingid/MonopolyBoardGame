@@ -1,0 +1,7 @@
+D:\MonopolyBoardGame\MonopolyBoardGame\bin\Debug\MonopolyBoardGame.exe.config
+D:\MonopolyBoardGame\MonopolyBoardGame\bin\Debug\MonopolyBoardGame.exe
+D:\MonopolyBoardGame\MonopolyBoardGame\bin\Debug\MonopolyBoardGame.pdb
+D:\MonopolyBoardGame\MonopolyBoardGame\obj\Debug\MonopolyBoardGame.csproj.AssemblyReference.cache
+D:\MonopolyBoardGame\MonopolyBoardGame\obj\Debug\MonopolyBoardGame.csproj.CoreCompileInputs.cache
+D:\MonopolyBoardGame\MonopolyBoardGame\obj\Debug\MonopolyBoardGame.exe
+D:\MonopolyBoardGame\MonopolyBoardGame\obj\Debug\MonopolyBoardGame.pdb
