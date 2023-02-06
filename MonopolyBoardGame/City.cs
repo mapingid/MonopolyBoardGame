@@ -6,43 +6,47 @@ using System.Threading.Tasks;
 
 namespace MonopolyBoardGame
 {
-  class City : ISquare, ICity
+  class City : ISquare
   {
-    public string Name { get; }
-    public string Owner { get; set; }
-    public int PriceBuyLand { get; }
-    public int PriceBuyHouse { get; }
-    public int PriceBuyHotel { get; }
-    public int PriceRentLand { get; }
-    public int PriceRentHouse1 { get; }
-    public int PriceRentHouse2 { get; }
-    public int PriceRentHouse3 { get; }
-    public int PriceRentHouse4 { get; }
-    public int PriceRentHotel { get; }
-    public int Model { get; set; }
+    public string Name { get; set; }
+    public int OwnerID;
+    int Level;
+    int PriceLand;
+    int PriceHouse;
+    int PriceHotel;
+    int RentLand;
+    int RentHouse1;
+    int RentHouse2;
+    int RentHouse3;
+    int RentHouse4;
+    int RentHotel;
     public City( string name )
     {
       Name = name;
     }
 
-
-
-
-    public int Arrival()
+    public void StepIn( int id )
     {
-      //check ini tipe apa apakah mbayar atau malah dapet uang
-      return 0;
+      //
+
+
+      // Pay Rent
+      if( id != OwnerID ) { } // bayar
+      else { } //gausa bayar
+      Board.Player[id].Balance -= 100;
+      Board.Player[OwnerID].Balance += 100;
+
+      
+
     }
-    public int Transaction( int level )
-    {
-      //apakah berkunjung pertamakali ? beli tanah : beli rumah sesuai level
-      //apakah sudah punya rumah ? jika iya beli hotel
-      //setmodel
-      //setOwnership
+    public void Transaction( int id, int act ) {  }
 
-      return 0;
-    }
+    // List Of Transaction
+    int BuyLand( int id ) { setOwnership( id ); return PriceLand; }
+    int BuyHouse( int id, int level ) { setOwnership( id ); return PriceHouse * level; }
+    int BuyHotel( int id ) { setOwnership( id ); return PriceHouse; }
 
-
+    // Support Method
+    void setOwnership( int id ) { OwnerID = id; }
   }
 }

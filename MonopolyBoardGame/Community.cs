@@ -6,29 +6,21 @@ using System.Threading.Tasks;
 
 namespace MonopolyBoardGame
 {
-  class Station : ISquare
+  class Community : ISquare
   {
     public string Name { get; set; }
-    int OwnerID;
-    int Level;
-    int PriceLand;
-    int RentLand;
-
-    public Station( string name )
+    public Community( string name )
     {
       Name = name;
     }
-
     public void StepIn( int id )
     {
-      //balance -= ( RentLand * Level );
+      DrawCard( id );
     }
     public void Transaction( int id, int act ) { }
 
-    // List Of Action
-    int BuyLand( int id ) { setOwnership( id ); return PriceLand; }
-
     // Support Method
-    void setOwnership( int id ) { OwnerID = id; }
+    void DrawCard( int id ) { }
+
   }
 }

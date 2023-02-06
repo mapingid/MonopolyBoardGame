@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MonopolyBoardGame
 {
-  class Station : ISquare
+  class Company : ISquare
   {
     public string Name { get; set; }
     int OwnerID;
@@ -14,16 +14,16 @@ namespace MonopolyBoardGame
     int PriceLand;
     int RentLand;
 
-    public Station( string name )
+    public Company( string name )
     {
       Name = name;
     }
 
-    public void StepIn( int id )
+    public void StepIn( int id)
     {
-      //balance -= ( RentLand * Level );
+      //pay rent
     }
-    public void Transaction( int id, int act ) { }
+    public void Transaction( int id, int act ) {  }
 
     // List Of Action
     int BuyLand( int id ) { setOwnership( id ); return PriceLand; }

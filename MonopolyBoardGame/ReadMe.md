@@ -1,0 +1,10 @@
+﻿V Chance
+V City
+V Community
+V Company
+V FreePark
+V GoToJail
+V Prison
+V Start
+V Station
+V Tax

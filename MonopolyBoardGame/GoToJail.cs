@@ -6,22 +6,21 @@ using System.Threading.Tasks;
 
 namespace MonopolyBoardGame
 {
-  class Start : ISquare
+  class GoToJail
   {
     public string Name { get; set; }
-    int Money;
-    public Start( string name, int money )
+    public GoToJail( string name )
     {
       Name = name;
-      Money = money;
     }
-
-
-
-    public void StepIn( int id )
+    public void StepIn( int id)
     {
-      //balance += Money;
+      //position = 0; //Koordinat Jail
+      //isPrisoned = true;
     }
-    public void Transaction( int id, int act ) {}
+    public void Transaction( int id, int act ) { }
+
+    
+
   }
 }

@@ -8,12 +8,13 @@ namespace MonopolyBoardGame
 {
   class Player
   {
-    int Balance;
-    int NetWorth;
-    int Position;
+    public int Position;
+    public int Balance;
+    public int Wealth;
+    public string Name;
+    public bool IsPrisoned;
+    public bool IsAlive;
+    public bool HasFreePrisonCard;
     
-
-
-
   }
 }

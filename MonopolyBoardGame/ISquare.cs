@@ -8,6 +8,10 @@ namespace MonopolyBoardGame
 {
   interface ISquare
   {
-    string Name { get; }
+    string Name { get; set; }
+    void StepIn( int id);
+    void Transaction( int id, int act);
+
+
   }
 }

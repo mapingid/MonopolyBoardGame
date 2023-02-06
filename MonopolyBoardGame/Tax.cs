@@ -6,15 +6,20 @@ using System.Threading.Tasks;
 
 namespace MonopolyBoardGame
 {
-  class Tax : ISquare, ITax
+  class Tax : ISquare
   {
-    public string Name { get; }
-    public int Charge { get; }
-    public Tax( string name, int charge )
+    public string Name { get; set; }
+    int TaxAmmount;
+    public Tax( string name, int taxAmmount )
     {
       Name = name;
-      Charge = charge;
+      TaxAmmount = taxAmmount;
     }
-    public int Arrival() { return Charge; }
+    public void StepIn( int id) 
+    {
+      //balance -= TaxAmmount;
+      //Board.TaxFund += TaxAmmount;
+    }
+    public void Transaction( int id, int act ) {  }
   }
 }

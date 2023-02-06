@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace MonopolyBoardGame
 {
-  class Start : ISquare
+  class FreePark : ISquare
   {
     public string Name { get; set; }
-    int Money;
-    public Start( string name, int money )
+    public FreePark( string name )
     {
       Name = name;
-      Money = money;
     }
 
+    
 
-
-    public void StepIn( int id )
+    public void StepIn( int id)
     {
-      //balance += Money;
+      
     }
-    public void Transaction( int id, int act ) {}
+    public void Transaction( int id, int act ) { } //select keliling dunia or take taxfund
+
+
   }
 }
